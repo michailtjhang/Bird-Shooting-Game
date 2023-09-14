@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bird Shooting Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+</head>
+<body>
+	<div class="title-text">
+		<h2>Score Bird Shooting Game</h2>
+		<p class="font-bold">Top Score  : <span id="topScore"></span></p>
+		<p class="font-bold">Total Time : <span id="totalWaktu"></span></p>
+		<button class="button" onclick="showBird()">Mulai</button>
+	</div>
+
+	<div class="border-screen-game">
+		<h1>Bird Shooting Game</h1>
+		<div class="content-screen-game">
+			<img id="bird">
+		</div>
+	</div>
+	
+	<div class="Tutorial-text">
+		<h3>Cara Bermain Bird Shooting</h3>
+		<ol>
+			<li>Klik tombol "Mulai" untuk memulai permainan.</li>
+			<li>Setelah itu, gambar burung akan muncul secara acak di layar.</li>
+			<li>Klik atau tekan gambar burung untuk mengubahnya menjadi gambar bom.</li>
+			<li>Setelah 5 kali tembakan, permainan selesai.</li>
+			<li>Akan muncul notifikasi "Bird Shooting Game! Selesai".</li>
+			<li>Total waktu yang dibutuhkan untuk menyelesaikan permainan akan ditampilkan di layar.</li>
+			<li>Jika kamu berhasil mencetak waktu terbaik, maka skor terbaik akan disimpan dan ditampilkan di layar.</li>
+		</ol>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
