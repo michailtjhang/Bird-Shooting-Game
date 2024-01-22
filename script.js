@@ -71,10 +71,10 @@ function setTopScore() {
 	if (localStorage.getItem ("topScore") == null) {
 		localStorage.setItem("topScore", totalWaktu);
 		document.getElementById("topScore").innerHTML = totalWaktu + " s";
-	} else if (totalWaktu < topScore) {
-		localStorage.setItem("topScore", totalWaktu);
-		document.getElementById("topScore").innerHTML = totalWaktu + " s";
 	} else {
-
+		if (totalWaktu < localStorage.getItem("topScore")) {
+			localStorage.setItem("topScore", totalWaktu);
+			document.getElementById("topScore").innerHTML = totalWaktu + " s";
+		}
 	}
 }
